@@ -112,6 +112,10 @@ document.addEventListener('DOMContentLoaded', (ev) => {
     }
 
     function insertValueToClipboard(value) {
+        if (!value) {
+            return;
+        }
+
         navigator.clipboard.writeText(value).then(function() {
             addModal();
             console.log('ok!');
@@ -121,11 +125,21 @@ document.addEventListener('DOMContentLoaded', (ev) => {
     }
 
     function addModal() {
+        removeModal();
+
         let message = 'Seu link foi copiado com sucesso! Envie para um dos seus amigos ou familiares.';
         let div = document.createElement('div');
         div.append(message);
         div.classList.add('modal');
 
         document.querySelector('body').append(div);
+    }
+
+    function removeModal() {
+        let modal = document.querySelector('.modal');
+
+        if (modal) {
+            modal.remove();
+        }
     }
 });

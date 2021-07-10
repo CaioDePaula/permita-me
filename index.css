@@ -94,3 +94,33 @@ body {
     background-color: #00ca0063;
     transform: translate(-50%, -15%);
 }
+
+
+/* Mobile layout */
+@media (max-width: 600px)
+{
+    .container {
+        left: 0px;
+        right: 0px;
+        padding: 0px 22px;
+        min-width: fit-content;
+        transform: translate(0px, -35%);
+    }
+
+    .container-logo-page {
+        flex-direction: column;
+    }
+
+    .modal {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        border-radius: 0px;
+        transform: translate(0, 0);
+    }
+
+    .container-button {
+        padding: .5rem;
+    }
+
+}
