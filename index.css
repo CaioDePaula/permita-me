@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    min-width: 33rem;
+    min-height: 10rem;
+    transform: translate(-50%, -35%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 12px;
+    height: 2.5rem;
+    cursor: pointer;
+    color: #3c4043;
+    margin: 11px 4px;
+    font-size: .95rem;
+    text-align: center;
+    text-decoration: none;
+    background: #f8f9fa;
+}
+
+.container-button {
+    padding: 1rem;
+}
+
+.container-input-search {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    margin: 1.5rem;
+    max-height: 44px;
+    max-width: 36.5rem;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #dfe1e5;
+    justify-content: space-between;
+}
+
+.container-input-search:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.container-input-search input {
+    border: none;
+    width: 90%;
+    outline: none;
+    height: 1.5rem;
+}
+
+.container-input-search input:focus .container-input-search {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.container-input-search span {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 3px;
+    fill: #9aa0a6;
+    cursor: pointer;
+}
+
+.teclado {
+    background: url(http://www.gstatic.com/inputtools/images/tia.png) no-repeat center;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+.container-logo-page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: #00ca0063;
+    transform: translate(-50%, -15%);
+}
